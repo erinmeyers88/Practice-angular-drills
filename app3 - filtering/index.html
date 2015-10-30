@@ -1,6 +1,18 @@
-<html>
-	<body>
-		Something
+<html ng-app="app3">
+	<head>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body ng-controller="mainCtrl">
+		<header>FAKE DIRECTORY</header>
+		<input class="input" type="text" ng-model="name" placeholder="Search" style="text-align: center; width: 300px; height: 30px; font-size: 20px"></input>
+		
+		<div class="some" ng-repeat="some in something | filter: name">
+			<span>{{some.name}}</span>
+			<div>{{some.dateEmployed}}</div>
+			<div>{{some.email}}</div>
+			<div>{{some.phone}}</div>
+		</div>
+		
 				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>

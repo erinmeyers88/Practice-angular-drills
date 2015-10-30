@@ -1,7 +1,14 @@
 <html ng-app="apiApp">
-	<body>
+	<body ng-controller="myCtrl">
 		
-				<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<!-- Check to see what structure that data comes back in before displaying it -->
+		
+		<div ng-repeat="country in countries">
+			{{country.name}}
+		</div>
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
 		<script src="app.js"></script>
 		<script src="controller.js"></script>
 		<script src="service.js"></script>

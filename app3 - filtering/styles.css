@@ -1,0 +1,40 @@
+.some {
+	color: white;
+	font-family: arial;
+	margin: 15px;
+	background-color: #ff4141;
+	line-height: 14px;
+	padding: 10px;
+}
+
+.some > div {
+	padding: 10px;
+}
+
+.some > span {
+	padding: 5px;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.some > div:last-child {
+	font-size: 22px;
+}
+
+.input {
+	display: block;
+	margin: 0 auto;
+}
+
+body {
+	background-color: #0099FF;
+}
+
+header {
+	display: inline-block;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 20px;
+	font-size: 50px;
+}
